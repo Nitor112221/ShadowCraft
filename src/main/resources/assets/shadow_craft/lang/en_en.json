@@ -1,0 +1,21 @@
+{
+  "item.shadow_craft.shadow_rock": "Shadow rock",
+  "item.shadow_craft.flash_wand": "Flash wand",
+  "block.shadow_craft.shadow_stone": "Shadow stone",
+  "block.shadow_craft.magic_stone": "Magic stone",
+  "item.shadow_craft.shadow_boots": "Shadow boots",
+  "item.shadow_craft.shadow_chestplate": "Shadow chestplate",
+  "item.shadow_craft.shadow_helmet": "Shadow helmet",
+  "item.shadow_craft.shadow_leggings": "Shadow leggings",
+  "item.shadow_craft.tea_seeds": "Tea seeds",
+  "item.shadow_craft.tea": "Tea",
+  "entity.shadow_craft.villager.magician": "Magician",
+  "painting.shadow_craft.revivus.title": "AVE REVIVUS",
+  "painting.shadow_craft.revivus.author": "",
+  "painting.shadow_craft.time.title": "TIME",
+  "painting.shadow_craft.time.author": "",
+  "block.shadow_craft.shadow_rock_ore": "Shadow rock ore",
+  "key.category.shadow_craft.shadow_craft": "ShadowCraft",
+  "key.shadow_craft.magic_keybinding": "Start",
+  "creativetab.shadow_craft_tab": "ShadowCraft"
+}

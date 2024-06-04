@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.1,
+  "group": "shadow_rock",
+  "ingredient": {
+    "item": "shadow_craft:shadow_rock_ore"
+  },
+  "result": "shadow_craft:shadow_rock"
+}

@@ -1,6 +1,7 @@
 package net.nitor.shadow_craft;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -13,6 +14,9 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.nitor.shadow_craft.block.ModBlocks;
+import net.nitor.shadow_craft.item.ModCreativeModTabs;
+import net.nitor.shadow_craft.item.ModItems;
 import org.slf4j.Logger;
 
 
@@ -24,6 +28,10 @@ public class ShadowCraft {
 
     public ShadowCraft() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+        ModCreativeModTabs.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -37,7 +45,11 @@ public class ShadowCraft {
 
     }
 
-    private void addCreative(BuildCreativeModeTabContentsEvent event) {}
+    private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.SHADOW_ROCK);
+        }
+    }
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
 

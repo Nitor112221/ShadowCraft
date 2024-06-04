@@ -1,0 +1,21 @@
+{
+  "item.shadow_craft.shadow_rock": "Теневой камень",
+  "item.shadow_craft.flash_wand": "Сверкающий скипетр",
+  "block.shadow_craft.shadow_stone": "Теневая порода",
+  "block.shadow_craft.magic_stone": "Магический камень",
+  "item.shadow_craft.shadow_boots": "Теневые ботинки",
+  "item.shadow_craft.shadow_chestplate": "Теневой нагрудник",
+  "item.shadow_craft.shadow_helmet": "Теневой шлем",
+  "item.shadow_craft.shadow_leggings": "Теневые поножи",
+  "item.shadow_craft.tea_seeds": "Семена чая",
+  "item.shadow_craft.tea": "Чай",
+  "entity.shadow_craft.villager.magician": "Колдун",
+  "painting.shadow_craft.revivus.title": "AVE REVIVUS",
+  "painting.shadow_craft.revivus.author": "",
+  "painting.shadow_craft.time.title": "TIME",
+  "painting.shadow_craft.time.author": "",
+  "block.shadow_craft.shadow_rock_ore": "Руда теневого камня",
+  "key.category.shadow_craft.shadow_craft": "ShadowCraft",
+  "key.shadow_craft.magic_keybinding": "Начать",
+  "creativetab.shadow_craft_tab": "ShadowCraft"
+}
