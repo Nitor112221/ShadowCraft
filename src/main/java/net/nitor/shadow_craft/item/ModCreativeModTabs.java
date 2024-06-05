@@ -24,6 +24,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.FLASH_WAND.get());
                         pOutput.accept(ModBlocks.MAGIC_STONE.get());
                         pOutput.accept(ModItems.CANDY.get());
+                        pOutput.accept(ModItems.YOUR_MIND.get());
                     })
                     .build());
 
