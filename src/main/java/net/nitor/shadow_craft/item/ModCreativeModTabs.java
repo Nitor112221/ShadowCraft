@@ -22,6 +22,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.SHADOW_STONE.get());
                         pOutput.accept(ModBlocks.SHADOW_ROCK_ORE.get());
                         pOutput.accept(ModItems.FLASH_WAND.get());
+                        pOutput.accept(ModBlocks.MAGIC_STONE.get());
                     })
                     .build());
 

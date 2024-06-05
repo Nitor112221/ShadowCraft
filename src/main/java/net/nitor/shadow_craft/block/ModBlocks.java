@@ -13,6 +13,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.nitor.shadow_craft.ShadowCraft;
+import net.nitor.shadow_craft.block.custom.MagicBlock;
 import net.nitor.shadow_craft.item.ModItems;
 
 import java.util.function.Supplier;
@@ -22,6 +23,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> SHADOW_STONE = registerBlock("shadow_stone",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).sound(SoundType.DEEPSLATE)));
+
+    public static final RegistryObject<Block> MAGIC_STONE = registerBlock("magic_stone",
+            () -> new MagicBlock(BlockBehaviour.Properties.copy(Blocks.DIRT).sound(SoundType.AMETHYST)));
 
     public static final RegistryObject<Block> SHADOW_ROCK_ORE = registerBlock("shadow_rock_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE).sound(SoundType.DEEPSLATE), UniformInt.of(3, 6)));
