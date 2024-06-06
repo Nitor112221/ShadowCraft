@@ -42,8 +42,4 @@ public class FlashWandItem extends Item {
         stack.hurtAndBreak(1, player, player1 -> player1.broadcastBreakEvent(player1.getUsedItemHand()));
         return true;
     }
-
-    private void outputValuableCoordinates(BlockPos blockPos, Player player, Block block) {
-        player.sendSystemMessage(Component.literal("Found " + I18n.get(block.getDescriptionId()) + " at " + "(" + blockPos.getX() + ", " + blockPos.getY() + ", " + blockPos.getZ() + ")"));
-    }
 }
