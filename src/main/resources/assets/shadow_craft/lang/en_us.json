@@ -19,5 +19,8 @@
   "block.shadow_craft.shadow_rock_ore": "Shadow rock ore",
   "key.category.shadow_craft.shadow_craft": "ShadowCraft",
   "key.shadow_craft.magic_keybinding": "Start",
+  "tooltip.shadow_craft.flash_wand.tooltip": "§4This is cool magic wand\n§1Hold down the [shift] or [ctrl] for extra information",
+  "tooltip.shadow_craft.flash_wand.tooltip_ctrl": "§6Kill all",
+  "tooltip.shadow_craft.flash_wand.tooltip_shift": "§2Teleports 10 block forward",
   "creativetab.shadow_craft_tab": "ShadowCraft"
 }

@@ -19,5 +19,8 @@
   "block.shadow_craft.shadow_rock_ore": "Руда теневого камня",
   "key.category.shadow_craft.shadow_craft": "ShadowCraft",
   "key.shadow_craft.magic_keybinding": "Начать",
+  "tooltip.shadow_craft.flash_wand.tooltip": "§4Это классный магический посох\n§1Зажмите [shift] и [ctrl] для получения дополнительной информации",
+  "tooltip.shadow_craft.flash_wand.tooltip_ctrl": "§6Убивает всех",
+  "tooltip.shadow_craft.flash_wand.tooltip_shift": "§3Телепортирует на 10 блоков вперёд",
   "creativetab.shadow_craft_tab": "ShadowCraft"
 }
