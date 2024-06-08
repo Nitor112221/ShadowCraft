@@ -25,6 +25,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.MAGIC_STONE.get());
                         pOutput.accept(ModItems.CANDY.get());
                         pOutput.accept(ModItems.YOUR_MIND.get());
+                        pOutput.accept(ModItems.TRAVELER_SWORD.get());
                     })
                     .build());
 

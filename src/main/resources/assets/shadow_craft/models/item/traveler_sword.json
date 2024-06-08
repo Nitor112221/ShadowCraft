@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "shadow_craft:item/traveler_sword_model"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "shadow_craft:item/traveler_sword_model"
+    },
+    "ground": {
+      "parent": "shadow_craft:item/traveler_sword_model"
+    },
+    "fixed": {
+      "parent": "shadow_craft:item/traveler_sword_model"
+    }
+  }
+}
