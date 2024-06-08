@@ -1,0 +1,10 @@
+// 1.20.2	2024-06-08T14:38:40.8052619	Block States: shadow_craft
+badde6e8b421513a7361c4c09d925a80d022b1de assets/shadow_craft/blockstates/magic_stone.json
+f17ab5840e66fdde8c741d16af42e52489583198 assets/shadow_craft/blockstates/shadow_rock_ore.json
+e2535dce2224675512175933d14d0933aeccaad9 assets/shadow_craft/blockstates/shadow_stone.json
+25944a0293bfac62e04dead2170644ac70990dd8 assets/shadow_craft/models/block/magic_stone.json
+bc40cd54fec5e8817ebb3d01bbc16afe98d6e146 assets/shadow_craft/models/block/shadow_rock_ore.json
+fe9cf6d6fcc25d7c12f54acc0f4fa057b8cb184b assets/shadow_craft/models/block/shadow_stone.json
+6e0c6e423329dca1e9433400c147c317713ffaad assets/shadow_craft/models/item/magic_stone.json
+fc5de9a3c04e782f97c176b18023ed015dd576c9 assets/shadow_craft/models/item/shadow_rock_ore.json
+b37d681327101e5031cd180328145bbaf7aa1d5c assets/shadow_craft/models/item/shadow_stone.json

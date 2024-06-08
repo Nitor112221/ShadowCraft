@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "shadow_craft:item/shadow_rock_axe"
+  }
+}

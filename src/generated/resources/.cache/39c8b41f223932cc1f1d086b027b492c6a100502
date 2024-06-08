@@ -1,0 +1,6 @@
+// 1.20.2	2024-06-08T14:38:40.7922626	Tags for minecraft:block mod id shadow_craft
+2205b960ee94810bab800116a4a1cac892aa0f62 data/minecraft/tags/blocks/mineable/axe.json
+5ca1a2bf4443a776d85a3df5b55d24f2b06208c8 data/minecraft/tags/blocks/mineable/pickaxe.json
+2205b960ee94810bab800116a4a1cac892aa0f62 data/minecraft/tags/blocks/mineable/shovel.json
+1bcd9350fc88f8ad14cf97f06ea3f5a1c40478c1 data/minecraft/tags/blocks/needs_iron_tool.json
+2205b960ee94810bab800116a4a1cac892aa0f62 data/shadow_craft/tags/blocks/needs_shadow_rock_tool.json

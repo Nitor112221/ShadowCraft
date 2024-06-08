@@ -8,6 +8,7 @@ import net.nitor.shadow_craft.ShadowCraft;
 
 public class ModTags {
     public static class Blocks {
+        public static final TagKey<Block> NEEDS_SHADOW_ROCK_TOOL = tag("needs_shadow_rock_tool");
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(ShadowCraft.MOD_ID, name));
         }

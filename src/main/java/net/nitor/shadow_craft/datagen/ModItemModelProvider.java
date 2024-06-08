@@ -20,7 +20,17 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.FLASH_WAND);
         simpleItem(ModItems.SHADOW_ROCK);
         simpleItem(ModItems.YOUR_MIND);
+        handheldItem(ModItems.SHADOW_ROCK_PICKAXE);
+        handheldItem(ModItems.SHADOW_ROCK_AXE);
+        handheldItem(ModItems.SHADOW_ROCK_SHOVEL);
+        handheldItem(ModItems.SHADOW_ROCK_SWORD);
         simpleItem(ModItems.CANDY);
+    }
+
+    private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/handheld")).texture("layer0",
+                new ResourceLocation(ShadowCraft.MOD_ID, "item/" + item.getId().getPath()));
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

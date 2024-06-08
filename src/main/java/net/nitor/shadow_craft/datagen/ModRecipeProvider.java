@@ -2,6 +2,7 @@ package net.nitor.shadow_craft.datagen;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
@@ -24,6 +25,42 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     protected void buildRecipes(RecipeOutput pRecipeOutput) {
         oreBlasting(pRecipeOutput, SHADOW_ROCK_SMELTABLES, RecipeCategory.MISC, ModItems.SHADOW_ROCK.get(), 0.25f, 100, "shadow_rock");
         oreSmelting(pRecipeOutput, SHADOW_ROCK_SMELTABLES, RecipeCategory.MISC, ModItems.SHADOW_ROCK.get(), 0.25f, 200, "shadow_rock");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SHADOW_ROCK_PICKAXE.get())
+                .pattern("SSS")
+                .pattern(" T ")
+                .pattern(" T ")
+                .define('S', ModItems.SHADOW_ROCK.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.SHADOW_ROCK.get()), has(ModItems.SHADOW_ROCK.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SHADOW_ROCK_SWORD.get())
+                .pattern("S")
+                .pattern("S")
+                .pattern("T")
+                .define('S', ModItems.SHADOW_ROCK.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.SHADOW_ROCK.get()), has(ModItems.SHADOW_ROCK.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SHADOW_ROCK_SHOVEL.get())
+                .pattern("S")
+                .pattern("T")
+                .pattern("T")
+                .define('S', ModItems.SHADOW_ROCK.get())
+                .unlockedBy(getHasName(ModItems.SHADOW_ROCK.get()), has(ModItems.SHADOW_ROCK.get()))
+                .define('T', Items.STICK)
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SHADOW_ROCK_AXE.get())
+                .pattern("SS")
+                .pattern("ST")
+                .pattern(" T")
+                .define('S', ModItems.SHADOW_ROCK.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.SHADOW_ROCK.get()), has(ModItems.SHADOW_ROCK.get()))
+                .save(pRecipeOutput);
     }
 
     protected static void oreSmelting(RecipeOutput pRecipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup) {

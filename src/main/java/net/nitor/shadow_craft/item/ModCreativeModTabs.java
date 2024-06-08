@@ -26,6 +26,10 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.CANDY.get());
                         pOutput.accept(ModItems.YOUR_MIND.get());
                         pOutput.accept(ModItems.TRAVELER_SWORD.get());
+                        pOutput.accept(ModItems.SHADOW_ROCK_PICKAXE.get());
+                        pOutput.accept(ModItems.SHADOW_ROCK_AXE.get());
+                        pOutput.accept(ModItems.SHADOW_ROCK_SHOVEL.get());
+                        pOutput.accept(ModItems.SHADOW_ROCK_SWORD.get());
                     })
                     .build());
 
