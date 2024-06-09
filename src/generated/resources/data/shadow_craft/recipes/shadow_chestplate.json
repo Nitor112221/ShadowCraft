@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+      "item": "minecraft:netherite_chestplate"
+    },
+    "S": {
+      "item": "shadow_craft:shadow_rock"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "SNS",
+    "SSS"
+  ],
+  "result": {
+    "item": "shadow_craft:shadow_chestplate"
+  },
+  "show_notification": true
+}

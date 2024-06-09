@@ -22,6 +22,11 @@ public class ModItems {
     public static final RegistryObject<Item> SHADOW_ROCK_PICKAXE = ITEMS.register("shadow_rock_pickaxe", () -> new PickaxeItem(ModToolTiers.SHADOW_ROCK,1, 2, new Item.Properties().durability(2000)));
     public static final RegistryObject<Item> SHADOW_ROCK_SHOVEL = ITEMS.register("shadow_rock_shovel", () -> new ShovelItem(ModToolTiers.SHADOW_ROCK,1, 2, new Item.Properties().durability(2000)));
     public static final RegistryObject<Item> SHADOW_ROCK_AXE = ITEMS.register("shadow_rock_axe", () -> new SwordItem(ModToolTiers.SHADOW_ROCK,4, 1, new Item.Properties().durability(2000)));
+
+    public static final RegistryObject<Item> SHADOW_HELMET = ITEMS.register("shadow_helmet", () -> new ArmorItem(ModArmorMaterials.SHADOW_ROCK,ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> SHADOW_CHESTPLATE = ITEMS.register("shadow_chestplate", () -> new ArmorItem(ModArmorMaterials.SHADOW_ROCK,ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> SHADOW_LEGGINGS = ITEMS.register("shadow_leggings", () -> new ArmorItem(ModArmorMaterials.SHADOW_ROCK,ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> SHADOW_BOOTS = ITEMS.register("shadow_boots", () -> new ArmorItem(ModArmorMaterials.SHADOW_ROCK,ArmorItem.Type.BOOTS, new Item.Properties()));
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

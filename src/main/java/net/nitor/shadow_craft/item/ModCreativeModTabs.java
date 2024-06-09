@@ -6,7 +6,6 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.RegisterEvent;
 import net.minecraftforge.registries.RegistryObject;
 import net.nitor.shadow_craft.ShadowCraft;
 import net.nitor.shadow_craft.block.ModBlocks;
@@ -25,11 +24,18 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.MAGIC_STONE.get());
                         pOutput.accept(ModItems.CANDY.get());
                         pOutput.accept(ModItems.YOUR_MIND.get());
+
                         pOutput.accept(ModItems.TRAVELER_SWORD.get());
                         pOutput.accept(ModItems.SHADOW_ROCK_PICKAXE.get());
                         pOutput.accept(ModItems.SHADOW_ROCK_AXE.get());
                         pOutput.accept(ModItems.SHADOW_ROCK_SHOVEL.get());
                         pOutput.accept(ModItems.SHADOW_ROCK_SWORD.get());
+
+                        pOutput.accept(ModItems.SHADOW_HELMET.get());
+                        pOutput.accept(ModItems.SHADOW_CHESTPLATE.get());
+                        pOutput.accept(ModItems.SHADOW_LEGGINGS.get());
+                        pOutput.accept(ModItems.SHADOW_BOOTS.get());
+
                     })
                     .build());
 

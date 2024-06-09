@@ -61,6 +61,42 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('T', Items.STICK)
                 .unlockedBy(getHasName(ModItems.SHADOW_ROCK.get()), has(ModItems.SHADOW_ROCK.get()))
                 .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SHADOW_HELMET.get())
+                .pattern("SSS")
+                .pattern("SNS")
+                .pattern("SSS")
+                .define('S', ModItems.SHADOW_ROCK.get())
+                .define('N', Items.NETHERITE_HELMET)
+                .unlockedBy(getHasName(ModItems.SHADOW_ROCK.get()), has(ModItems.SHADOW_ROCK.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SHADOW_CHESTPLATE.get())
+                .pattern("SSS")
+                .pattern("SNS")
+                .pattern("SSS")
+                .define('S', ModItems.SHADOW_ROCK.get())
+                .define('N', Items.NETHERITE_CHESTPLATE)
+                .unlockedBy(getHasName(ModItems.SHADOW_ROCK.get()), has(ModItems.SHADOW_ROCK.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SHADOW_LEGGINGS.get())
+                .pattern("SSS")
+                .pattern("SNS")
+                .pattern("SSS")
+                .define('S', ModItems.SHADOW_ROCK.get())
+                .define('N', Items.NETHERITE_LEGGINGS)
+                .unlockedBy(getHasName(ModItems.SHADOW_ROCK.get()), has(ModItems.SHADOW_ROCK.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SHADOW_BOOTS.get())
+                .pattern("SSS")
+                .pattern("SNS")
+                .pattern("SSS")
+                .define('S', ModItems.SHADOW_ROCK.get())
+                .define('N', Items.NETHERITE_BOOTS)
+                .unlockedBy(getHasName(ModItems.SHADOW_ROCK.get()), has(ModItems.SHADOW_ROCK.get()))
+                .save(pRecipeOutput);
     }
 
     protected static void oreSmelting(RecipeOutput pRecipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup) {
