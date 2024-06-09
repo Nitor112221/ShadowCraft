@@ -17,6 +17,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.nitor.shadow_craft.block.ModBlocks;
 import net.nitor.shadow_craft.item.ModCreativeModTabs;
 import net.nitor.shadow_craft.item.ModItems;
+import net.nitor.shadow_craft.loot.ModLootModifier;
 import org.slf4j.Logger;
 
 
@@ -32,6 +33,7 @@ public class ShadowCraft {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModCreativeModTabs.register(modEventBus);
+        ModLootModifier.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

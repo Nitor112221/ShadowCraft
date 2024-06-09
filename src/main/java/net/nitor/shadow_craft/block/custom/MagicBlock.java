@@ -10,6 +10,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
+import net.nitor.shadow_craft.item.custom.ModArmorItem;
 
 public class MagicBlock extends Block {
 
@@ -26,7 +27,7 @@ public class MagicBlock extends Block {
 
     @Override
     public void playerWillDestroy(Level pLevel, BlockPos pPos, BlockState pState, Player pPlayer) {
-        pPlayer.hurt(pPlayer.damageSources().magic(), 4);
+        if (!ModArmorItem.hasFullSuitOfArmorOn(pPlayer)) pPlayer.hurt(pPlayer.damageSources().magic(), 4);
         super.playerWillDestroy(pLevel, pPos, pState, pPlayer);
     }
 }

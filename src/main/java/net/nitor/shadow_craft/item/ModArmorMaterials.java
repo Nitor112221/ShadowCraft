@@ -10,7 +10,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    SHADOW_ROCK("shadow", 26, new int[]{5, 7, 5, 4}, 25,
+    SHADOW_ROCK("shadow", 55, new int[]{5, 7, 5, 4}, 25,
             SoundEvents.ARMOR_EQUIP_DIAMOND, 1f, 0f, () -> Ingredient.of(ModItems.SHADOW_ROCK.get()));
 
     private final String name;
