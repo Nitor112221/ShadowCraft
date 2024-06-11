@@ -4,6 +4,9 @@ import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.resources.language.I18n;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionResultHolder;
@@ -37,6 +40,7 @@ public class FlashWandItem extends Item {
         double dy = (-Math.sin(Math.toRadians(rotation_vert))) * 10;
         pPlayer.teleportTo(pPlayer.getX() + dx, pPlayer.getY() + dy, pPlayer.getZ() + dz);
         pPlayer.getItemInHand(pUsedHand).hurtAndBreak(1, pPlayer, player -> player.broadcastBreakEvent(player.getUsedItemHand()));
+        pLevel.playSeededSound(null, pPlayer.getX(), pPlayer.getY(), pPlayer.getZ(), SoundEvents.ENDER_PEARL_THROW, SoundSource.PLAYERS, 1f, 1f, 0);
         return super.use(pLevel, pPlayer, pUsedHand);
     }
 

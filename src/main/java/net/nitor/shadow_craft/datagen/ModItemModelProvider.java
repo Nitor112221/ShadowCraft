@@ -99,6 +99,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.SHADOW_LEGGINGS);
         trimmedArmorItem(ModItems.SHADOW_BOOTS);
 
+        withExistingParent(ModItems.SHADOW_SPIRIT_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+
         simpleItem(ModItems.CANDY);
     }
 

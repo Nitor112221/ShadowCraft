@@ -1,6 +1,7 @@
 package net.nitor.shadow_craft;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -15,9 +16,12 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.nitor.shadow_craft.block.ModBlocks;
+import net.nitor.shadow_craft.entity.ModEntities;
+import net.nitor.shadow_craft.entity.client.ShadowSpiritRenderer;
 import net.nitor.shadow_craft.item.ModCreativeModTabs;
 import net.nitor.shadow_craft.item.ModItems;
 import net.nitor.shadow_craft.loot.ModLootModifier;
+import net.nitor.shadow_craft.sound.ModSounds;
 import org.slf4j.Logger;
 
 
@@ -34,6 +38,8 @@ public class ShadowCraft {
         ModBlocks.register(modEventBus);
         ModCreativeModTabs.register(modEventBus);
         ModLootModifier.register(modEventBus);
+        ModSounds.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -61,6 +67,7 @@ public class ShadowCraft {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            EntityRenderers.register(ModEntities.SHADOW_SPIRIT.get(), ShadowSpiritRenderer::new);
         }
     }
 }

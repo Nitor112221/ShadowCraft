@@ -1,4 +1,4 @@
-// 1.20.2	2024-06-09T17:05:25.3094119	Item Models: shadow_craft
+// 1.20.2	2024-06-11T15:27:44.1551332	Item Models: shadow_craft
 467119414bb753ebd439b371828aeb89eba35280 assets/shadow_craft/models/item/candy.json
 026f2a05f1842756af7ff1c17346ebf23dd43753 assets/shadow_craft/models/item/flash_wand.json
 b5689c3f32c6aaf25962dbed7d9100dee545dc35 assets/shadow_craft/models/item/shadow_boots.json
@@ -50,4 +50,5 @@ bc2dafa398c631b5c6fa07968031b29cbfbca1f8 assets/shadow_craft/models/item/shadow_
 d1ccf07b241ea661825ab12cfba0502319c7adc1 assets/shadow_craft/models/item/shadow_rock_pickaxe.json
 0d3576046208d59d1353bd767229c141767e04ad assets/shadow_craft/models/item/shadow_rock_shovel.json
 fdb0a59473cc74142b1c17e15577e1f3ad03471b assets/shadow_craft/models/item/shadow_rock_sword.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/shadow_craft/models/item/shadow_spirit_spawn_egg.json
 c6b23d2a02c17f664ae676e54e053b1cd6da3441 assets/shadow_craft/models/item/your_mind.json

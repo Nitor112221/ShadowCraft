@@ -36,6 +36,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.SHADOW_LEGGINGS.get());
                         pOutput.accept(ModItems.SHADOW_BOOTS.get());
 
+                        pOutput.accept(ModItems.SHADOW_SPIRIT_SPAWN_EGG.get());
+
                     })
                     .build());
 
