@@ -38,7 +38,7 @@ public class ShadowSpiritModel<T extends Entity> extends HierarchicalModel<T>{
 	}
 
 	@Override
-	public void setupAnim(Entity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
+	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
 		this.root().getAllParts().forEach(ModelPart::resetPose);
 		this.animateWalk(ModAnimationDefinitions.IDLE, limbSwing, limbSwingAmount, 1.75f, 2.5f);
 		this.animate(((ShadowSpiritEntity) entity).idleAnimationState, ModAnimationDefinitions.IDLE, ageInTicks, 1f);

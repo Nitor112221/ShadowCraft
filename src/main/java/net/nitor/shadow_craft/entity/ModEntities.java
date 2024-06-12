@@ -14,7 +14,8 @@ public class ModEntities {
             DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, ShadowCraft.MOD_ID);
 
     public static final RegistryObject<EntityType<ShadowSpiritEntity>> SHADOW_SPIRIT =
-            ENTITY_TYPES.register("shadow_spirit", () -> EntityType.Builder.of(ShadowSpiritEntity::new, MobCategory.CREATURE).sized(0.5f, 1.5f).build("shadow_spirit"));
+            ENTITY_TYPES.register("shadow_spirit", () -> EntityType.Builder.of(ShadowSpiritEntity::new, MobCategory.CREATURE)
+                    .sized(0.5f, 1.5f).build("shadow_spirit"));
 
     public static void register(IEventBus eventBus){
         ENTITY_TYPES.register(eventBus);

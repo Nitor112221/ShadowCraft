@@ -19,7 +19,8 @@ public class ShadowSpiritRenderer extends MobRenderer<ShadowSpiritEntity, Shadow
     }
 
     @Override
-    public void render(ShadowSpiritEntity pEntity, float pEntityYaw, float pPartialTicks, PoseStack pPoseStack, MultiBufferSource pBuffer, int pPackedLight) {
+    public void render(ShadowSpiritEntity pEntity, float pEntityYaw, float pPartialTicks, PoseStack pPoseStack,
+                       MultiBufferSource pBuffer, int pPackedLight) {
         if (pEntity.isBaby()) {
             pPoseStack.scale(0.5f, 0.5f, 0.5f);
         }
