@@ -17,5 +17,4 @@ import java.util.List;
 @Mod.EventBusSubscriber(modid = ShadowCraft.MOD_ID)
 public class ModEvent {
 
-
 }

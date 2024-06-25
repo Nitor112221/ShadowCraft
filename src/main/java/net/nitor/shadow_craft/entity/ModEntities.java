@@ -17,6 +17,7 @@ public class ModEntities {
             ENTITY_TYPES.register("shadow_spirit", () -> EntityType.Builder.of(ShadowSpiritEntity::new, MobCategory.CREATURE)
                     .sized(0.5f, 1.5f).build("shadow_spirit"));
 
+
     public static void register(IEventBus eventBus){
         ENTITY_TYPES.register(eventBus);
     }
